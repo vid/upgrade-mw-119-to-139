@@ -29,8 +29,6 @@ for version in xetusoss/mediawiki:1.23 marcelofmatos/mediawiki:1.27 mediawiki:1.
   docker-compose up -d mwup
   sleep 15
 
-docker-compose exec -T pwd
-docker-compose exec -T ls
   docker-compose exec -T mwup php maintenance/update.php --quick
 
   docker-compose stop mwup
