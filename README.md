@@ -6,6 +6,8 @@ You will need to be on a bash compatible system, and have docker-composer
 installed. on some systems, you wil need to change the script to use "docker
 compose" instead.
 
+This script uses LTS versions, if you need to go from a later version than 1.19, edit the script accordingly.
+
 
 Instructions: Clone this repo, put your mysqldump file in the import directory, named either import.mysqldump or import.mysqldump.gz.
 
