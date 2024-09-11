@@ -2,14 +2,12 @@ version: '3'
 
 services:
   mwdb:
-    restart: always
     container_name: mwdb
     image: mariadb:10.11
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: mediawiki
     volumes:
-      - ./mariadb/mwup:/var/lib/mysql
       - ./import:/tmp/import
 
   mwup:
